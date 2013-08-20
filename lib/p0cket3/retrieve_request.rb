@@ -94,6 +94,8 @@ module P0cket3
       client.retrieve(where, options)
     end
 
+    alias_method :all, :retrieve
+
   protected
 
     def method_missing(method, *args, &block)

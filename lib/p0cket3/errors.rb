@@ -1,6 +1,11 @@
 module P0cket3
   module Error
+
     class PocketError < RuntimeError
+    end
+    class MissingParameter < PocketError
+    end
+    class FaradayPocketError < PocketError
       def initialize(env)
         @env = env
       end

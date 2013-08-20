@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'faraday', '~> 0.8.6'
   spec.add_dependency 'faraday_middleware', '~> 0.9.0'
-  spec.add_dependency "activesupport", "~> 3.2.13"
+  spec.add_dependency "activesupport", "> 3.2.0"
 
   spec.files = %w(LICENSE.md README.md p0cket3.gemspec)
   spec.files += Dir.glob("lib/**/*.rb")
